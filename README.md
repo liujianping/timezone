@@ -50,7 +50,7 @@ import "github.com/liujianping/timezone"
 
 now := time.Now()
 
-t1, _ := timezone.SetZone("Asia/Beijing", now)
+t1, _ := timezone.Zone("Asia/Beijing", now)
 
 t2 := now.In(timezone.GetZone("Asia/Beijing"))
 
